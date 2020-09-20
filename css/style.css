@@ -1,0 +1,59 @@
+
+body{
+    background-image: url(https://www.solidbackgrounds.com/images/2560x1440/2560x1440-royal-yellow-solid-color-background.jpg);
+}
+header{
+    background-color:#b19b4e;
+}
+
+
+img { height: 250px;
+    width:270px;
+    float: inherit;
+    padding-left: 200px;
+    margin-top: 50px;
+    }
+
+p{
+    position: relative;
+    padding-left: 70px;
+    padding-right: 70px;
+    border: double;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: x-large;
+    color:rgb(5, 63, 46);
+    font-family: 'Cairo', sans-serif;
+}
+header nav{
+    display:inline-flexbox;
+    
+    height: 50px;
+    margin-top: 0;
+}
+#logo{
+    margin-top:20px ;
+    position: relative;
+    margin-left: 200px;
+    padding-left: 5px;
+    height: 90px;
+    width: 130px;
+}
+header nav ul{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Ranchers', cursive;
+    font-weight: bolder;
+    
+    
+}
+header nav ul li a{
+    text-decoration: none;
+    color:rgb(5, 63, 46);
+    font-weight: bolder;
+    
+  
+    
+   
+   
+}
