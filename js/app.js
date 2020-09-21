@@ -116,8 +116,14 @@ function results() {
     views.push(Product.all[f].display);
   }
   //console.log(views);
-  for (t=0;t<Product.all.length;t++){
-       document.getElementById("p").innerText +=names[t]+'  had  '+votes[t]+'  votes and was shown  '+views[t]+'  times.';}
+  var answer=document.getElementById('answer')
+      for (t=0;t<Product.all.length;t++){
+       var pelm=document.createElement('p');
+       console.log(pelm);
+       answer.appendChild(pelm);
+        pelm.innerText =names[t]+'  had  '+votes[t]+'  votes and was shown  '+views[t]+'  times.';
+    
+    }
     
 
 }
