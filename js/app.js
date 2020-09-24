@@ -66,9 +66,11 @@ function getProduct() {
     
     render();
     getProduct();
+    
   }
 
 }
+
 //function to pick 3 random numbers and to check if they are unique and unduplicated
 function render() {
   var firstRandom = randomNumber(0, Product.all.length - 1);
@@ -116,7 +118,7 @@ function clickHandler(event) {
   render();
  
   if (rounds === 25) {
-    
+    results();
     addechart();
     imagesSection.removeEventListener('click', clickHandler);
     updateProduct();
@@ -248,4 +250,28 @@ function addechart() {
   });
 }
 
-
+function results() {
+  var names = [];
+for (var i = 0; i < Product.all.length; i++) {
+  names.push(Product.all[i].name);
+}
+//console.log(names);
+var votes = [];
+for (var j = 0; j < Product.all.length; j++) {
+  votes.push(Product.all[j].votes);
+}
+//console.log(votes);
+var views = [];
+for (var f = 0; f < Product.all.length; f++) {
+  views.push(Product.all[f].display);
+}
+//console.log(views);
+var answer=document.getElementById('answer')
+    for (t=0;t<Product.all.length;t++){
+     var pelm=document.createElement('p');
+     console.log(pelm);
+     answer.appendChild(pelm);
+      pelm.innerText =names[t]+'  had  '+votes[t]+'  votes and was shown  '+views[t]+'  times.';
+  
+  }
+}
